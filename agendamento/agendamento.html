@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta - Gerenciamento de Clínicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Gerenciamento de Clínicas</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Página Inicial</a></li>
+                <li><a href="../pacientes/">Pacientes</a></li>
+                <li><a href="../medicos/index.html">Médicos</a></li>
+                <li><a href="agendamento/agendamento.html">Agendamentos</a></li>
+                <li><a href="../relatorios/index.html">Relatórios</a></li>
+                <li><a href="../configuracao/index.html">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label for="patient-name">Nome do Paciente:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor">Médico:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Selecione o médico</option>
+                    <option value="Dr. Carlos Oliveira">Dr. Carlos Oliveira</option>
+                    <option value="Dra. Ana Santos">Dra. Ana Santos</option>
+                    <!-- Adicione mais opções de médicos, se necessário -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <button type="submit">Agendar Consulta</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clínica Médica XYZ - Gerenciamento de Clínicas</p>
+    </footer>
+</body>
+</html>

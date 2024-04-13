@@ -1,0 +1,63 @@
+{
+    "pacientes": [
+      {
+        "id": 1,
+        "nome": "João Silva",
+        "idade": 35,
+        "sexo": "Masculino",
+        "telefone": "(00) 1234-5678",
+        "email": "joao@example.com",
+        "endereco": "Rua A, 123",
+        "cidade": "São Paulo"
+      },
+      {
+        "id": 2,
+        "nome": "Maria Souza",
+        "idade": 45,
+        "sexo": "Feminino",
+        "telefone": "(00) 9876-5432",
+        "email": "maria@example.com",
+        "endereco": "Rua B, 456",
+        "cidade": "Rio de Janeiro"
+      }
+    ],
+    "medicos": [
+      {
+        "id": 1,
+        "nome": "Dr. Carlos Oliveira",
+        "especialidade": "Clínico Geral",
+        "telefone": "(00) 1111-2222",
+        "email": "carlos@example.com",
+        "endereco": "Avenida X, 789",
+        "cidade": "São Paulo"
+      },
+      {
+        "id": 2,
+        "nome": "Dra. Ana Santos",
+        "especialidade": "Pediatra",
+        "telefone": "(00) 3333-4444",
+        "email": "ana@example.com",
+        "endereco": "Avenida Y, 1011",
+        "cidade": "Rio de Janeiro"
+      }
+    ],
+    "agendamentos": [
+      {
+        "id": 1,
+        "paciente_id": 1,
+        "medico_id": 1,
+        "data": "2024-04-12",
+        "hora": "09:00",
+        "tipo_consulta": "Consulta de Rotina"
+      },
+      {
+        "id": 2,
+        "paciente_id": 2,
+        "medico_id": 2,
+        "data": "2024-04-15",
+        "hora": "10:30",
+        "tipo_consulta": "Consulta Pediátrica"
+      }
+    ]
+  }
+  

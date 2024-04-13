@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos - Gerenciamento de Clínicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Gerenciamento de Clínicas</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Página Inicial</a></li>
+                <li><a href="../pacientes/index.html">Pacientes</a></li>
+                <li><a href="/medicos/index.html">Médicos</a></li>
+                <li><a href="../agendamento/agendamento.html">Agendamentos</a></li>
+                <li><a href="../relatorios/index.html">Relatórios</a></li>
+                <li><a href="../configuracao/index.html">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Médicos</h2>
+
+        <!-- Lista de Médicos Cadastrados -->
+        <section>
+            <h3>Lista de Médicos Cadastrados</h3>
+            <ul id="doctors-list">
+                <!-- Os médicos cadastrados serão exibidos aqui -->
+                <li>Dr. Carlos Oliveira <button onclick="deleteDoctor('1')">Excluir</button></li>
+                <li>Dra. Ana Santos <button onclick="deleteDoctor('2')">Excluir</button></li>
+                <!-- Adicione mais itens conforme necessário -->
+            </ul>
+        </section>
+
+        <!-- Formulário para Cadastrar Novos Médicos -->
+        <section>
+            <h3>Cadastrar Novo Médico</h3>
+            <form id="add-doctor-form">
+                <div class="form-group">
+                    <label for="doctor-name">Nome do Médico:</label>
+                    <input type="text" id="doctor-name" name="doctor-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="specialty">Especialidade:</label>
+                    <input type="text" id="specialty" name="specialty" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clínica Médica XYZ - Gerenciamento de Clínicas</p>
+    </footer>
+
+    <script>
+        // Função para excluir médico
+        function deleteDoctor(doctorId) {
+            // Implemente aqui a lógica para excluir o médico com o ID fornecido
+            console.log("Excluir médico com ID:", doctorId);
+        }
+
+        // Event listener para o formulário de cadastro de médicos
+        document.getElementById('add-doctor-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que o formulário seja submetido normalmente
+
+            // Coleta os dados do formulário
+            const formData = new FormData(this);
+
+            // Cria um objeto com os dados do médico
+            const doctorData = {};
+            formData.forEach((value, key) => {
+                doctorData[key] = value;
+            });
+
+            // Envia os dados para a API (simulado)
+            console.log('Dados do médico:', doctorData);
+            // Aqui você pode enviar os dados para a API para cadastrar o médico
+        });
+    </script>
+</body>
+</html>

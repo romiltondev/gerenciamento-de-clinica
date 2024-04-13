@@ -1,0 +1,29 @@
+{
+    "relatorio_pacientes": [
+      {
+        "id": 1,
+        "nome": "João da Silva",
+        "idade": 35,
+        "sexo": "Masculino",
+        "diagnostico": "Hipertensão",
+        "ultima_consulta": "2024-04-10"
+      },
+      {
+        "id": 2,
+        "nome": "Maria Oliveira",
+        "idade": 45,
+        "sexo": "Feminino",
+        "diagnostico": "Diabetes",
+        "ultima_consulta": "2024-04-09"
+      },
+      {
+        "id": 3,
+        "nome": "José Santos",
+        "idade": 55,
+        "sexo": "Masculino",
+        "diagnostico": "Asma",
+        "ultima_consulta": "2024-04-08"
+      }
+    ]
+  }
+  
